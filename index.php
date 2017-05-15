@@ -9,7 +9,15 @@
     <script src="index/upRunTime.js"></script>
 </head>
 <body>
-
+<div id="bodyInfo" class="bodyInfo"></div>
+<div style="width: 300px;height: 600px;position: fixed;top: 10px;right: 10px;color: #3366CC;">Affiche:
+    </p>我知道你不可以返回,当你点击文章的时候.
+    后来我可能会使用html5 api history.pushState and history.replaceState.
+    但两天后我有一考试,紧接着后面，还要做一个小项目作为JSP课程期末成绩。
+    所以暂时我没有足够的时间持续维护My fossa 了。
+    大概要一星期的时间吧，一周后再见#_#~
+    </p>Time:2017-5-15 9:57
+</div><!--status-->
 <header id="header">
     <span id="ctrl" class="ctrl">>></span>
     <div class="admin">
@@ -34,8 +42,5 @@
         </ul>
     </div>
 </header>
-
-<div id="bodyInfo" class="bodyInfo">
-</div>
 </body>
 </html>
