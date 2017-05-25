@@ -9,6 +9,7 @@
 function str_to_html($str){
     $str=to_space($str);    #space to html
     $str=to_n($str);        #\n to html
+    $str=to_a($str);        #a to html
     $str=to_img($str);      #img to html
     $str=to_code($str);     #code to html
     return $str;
@@ -23,11 +24,21 @@ function space_to($str){
 }
 
 function to_n($str){
-    return str_replace("\r\n","</p>",$str);
+    return str_replace("\n","</p>",$str);
 }
 
 function n_to($str){
-    return str_replace("</p>","\r\n",$str);
+    return str_replace("</p>","\n",$str);
+}
+
+function to_a($str){
+    $reg='/#a\(([\s\S]+)\)\(([\s\S]+)\)#a/U';
+    preg_match_all($reg,$str,$hrefs); #get hrefs
+    $len=count($hrefs[1]);
+    for ($i=0;$i<$len;$i++) {
+        $str=preg_replace($reg,"<a class=\"in_a\" href=\"".$hrefs[2][$i]."\" target=\"_blank\">".$hrefs[1][$i]."</a>",$str,1);
+    }
+    return $str;
 }
 
 function to_img($str){

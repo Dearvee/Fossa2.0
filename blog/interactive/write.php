@@ -34,7 +34,6 @@ if ($write=="true") {
 <? include '../index/footer.php';echo $footer;?>
 </body>
 </html>";
-    include '../../index/footer.php';echo $footer;
     xml_revise('write','false',0);
 }
 else

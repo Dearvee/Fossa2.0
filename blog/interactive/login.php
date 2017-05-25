@@ -8,7 +8,6 @@
 ?>
 <link href="../css/login.css" type="text/css" rel="stylesheet"/>
 <body>
-<script src="../../index/canvas-nest.min.js"></script>
     <span id="win">
         <h2>Login My Blog</h2>
         <form action="safe.php">

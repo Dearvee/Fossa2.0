@@ -1,24 +1,32 @@
+body{
+    background: url("back.png");
+}
 .abstract{          /*all abstract*/
-    list-style-type: none;
-    margin-left: 1%;
-    padding-left: 0px;
+    list-style: none;
     color: #333;
+    padding: 0;
+}
+.abstract li:nth-child(2n+1){
+    background:url("back.png") #eeeeee;
 }
 .abs{               /*a abstract*/
-    background: #FFFFFF;
     font-family: Lato,"PingFang SC","Microsoft YaHei",sans-serif;
     font-size: 16px;
-    margin: 0 auto;
     letter-spacing:0.1em;
     text-align: left;
     line-height: 1.8;
     padding: 5px;
+    border-radius: 3px;
+}
+.abstract li{
+    transition: all 0.8s;
+}
+.abstract li:hover{
+    background:url("back.png") #cccccc;
 }
 .abs a{             /*title*/
     font-size: 1.2em;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8), 0 0 1.5px #00f, -2px 0 0 #f8f8f8, 2px 0 0 #f8f8f8;
-    box-shadow: inset 0 -3.5px 0 #f8f8f8, inset 0 -4.5px 0 #88f;
-    text-decoration: overline;
     transition:all 0.3s;
 }
 .abs a:link, a:visited {
@@ -26,9 +34,9 @@
 }
 .abs a:hover{
     color: #00f;
-    font-size: 1.3em;
 }
 .abs span{         /*time*/
     display: block;
-    margin: 10px;
+    color: #3366CC;
+    text-align: right;
 }

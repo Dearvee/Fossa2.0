@@ -11,6 +11,8 @@ $text=addslashes($_GET['text']);
 date_default_timezone_set('Asia/Shanghai');
 $time=date("l jS \of F Y H:i:s");
 $index=$_GET['index'];
+
+
 $mysqli=new mysqli("localhost","root","dearvee1996","blog");
 $sql="INSERT INTO article(title,text,time)
                           VALUES (N'$title',N'$text','$time')";

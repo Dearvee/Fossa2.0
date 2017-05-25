@@ -9,9 +9,10 @@
 include dirname(__FILE__).'/../interactive/get_data.php';
 include dirname(__FILE__).'/articleToHtml.php';
 include dirname(__FILE__).'/Home.php';
+include dirname(__FILE__).'/get_abstract.php';
 
 for ($i=0;$i<count($titles);$i++) {
-    $href = buildHtmlFile($titles[$i], $times[$i], $texts[$i]);#build html file
+    $href=buildHtmlFile($titles[$i],$times[$i],$texts[$i]);#build html file
     toHome($href, $titles[$i], $times[$i]);                     #write to home.txt
     echo $i." success~";
     sleep(2);

@@ -17,12 +17,12 @@ include dirname(__FILE__).'/../data/user_data.php';
         echo "login in successful~";
         xml_revise('login','true',0);
         xml_revise('write','true',0);
-        echo "<script>window.location.href=\"../index.php\"</script>";
+        echo "<script>window.location.href=\"write.php\"</script>";
     }
     else {
         echo "login in error~";
         xml_revise('error',(int)xml_get('error',0,$filename)+1,0);
-        echo "<script>window.location.href=\"../index.php\"</script>";
+        echo "<script>window.location.href=\"write.php\"</script>";
     }
 
 

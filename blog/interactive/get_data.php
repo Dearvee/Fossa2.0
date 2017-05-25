@@ -6,7 +6,8 @@
  * Time: 19:11
  */
 $mysqli=new mysqli("localhost","root","dearvee1996","blog");
-$sql="SELECT * FROM article";
+$sql="SELECT * FROM blog_article";
+
 $mysqli->query("set character_set_results=utf8");
 $result=$mysqli->query($sql);
 $titles=array();

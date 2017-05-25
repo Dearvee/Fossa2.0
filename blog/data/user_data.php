@@ -5,8 +5,7 @@
  * Date: 2017/5/5
  * Time: 2:05
  */
-$user="dearvee";
-$password="dearvee199601";
+
 include dirname(__FILE__).'\..\function\dom.php';
 $filename=dirname(__FILE__).'\data.xml';
 $login=xml_get('login',0,$filename);

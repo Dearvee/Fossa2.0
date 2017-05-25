@@ -31,10 +31,11 @@ function getHome(){
     $homeInfo=getId();
     $home="";
     for($i=count($homeInfo)-1;$i>=0;$i--){
-        $home=$home."<script src=\"../../index/Ajax.js\"></script>
+        $home=$home."
 <li class='abs'>
 <a href=\""."javascript:void(0);"."\" onclick=\"getAjax('blog/p/".$homeInfo[$i]['href'].".html');\">".$homeInfo[$i]['title']."</a>
-<span>".$homeInfo[$i]['time']."</span>";
+<span>".$homeInfo[$i]['time']."</span>
+</li>";
     }
     return $home;
 }

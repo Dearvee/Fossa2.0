@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <data>
-    <login>false</login>
+    <login>true</login>
     <write>false</write>
     <error>0</error>
 </data>

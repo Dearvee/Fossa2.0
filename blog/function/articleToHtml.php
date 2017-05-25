@@ -10,14 +10,12 @@ function buildHtmlFile($title,$time,$text){
 <head>
     <meta charset="utf-8">
     <title>随笔 - '.$title.'</title>
-    
-<link href="blog/css/article.css" type="text/css" rel="stylesheet"/>
 </head>
 
-<ul style="list-style-type: none;">
+<ul style="list-style-type: none;padding: 0;">
             <li class="page">
                     <h2>'.$title.'</h2>
-                    <h5>Posted&nbsp;@&nbsp;'.$time.'&nbsp;by&nbsp;dearvee</h5>
+                    <h5>Posted&nbsp;@&nbsp;'.$time.'&nbsp;by&nbsp;vee</h5>
                     '.$text.'      
             </li>
 </ul>';
